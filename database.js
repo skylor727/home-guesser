@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-const database = () => {
+const start = () => {
   mongoose.connect(process.env.DATABASE_URL);
   const db = mongoose.connection;
   db.on("connected", function () {
@@ -9,4 +9,4 @@ const database = () => {
   });
 };
 
-module.exports = { database};
+module.exports = { start};

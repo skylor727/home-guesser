@@ -5,7 +5,6 @@ const homeSchema = new Schema({
   price: String,
   tourUrl: String,
   address: String,
-  zillowId: String,
 });
 
 
